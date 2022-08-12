@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Contact component matches snapshot 1`] = `
+exports[`Contact component renders renders 1`] = `
 <DocumentFragment>
   <section>
     <h1
-      data-testid="contact-form"
+      data-testid="h1tag"
     >
-      Contact Me
+      Contact me
     </h1>
     <form
       id="contact-form"
@@ -25,9 +25,9 @@ exports[`Contact component matches snapshot 1`] = `
       </div>
       <div>
         <label
-          for="email"
+          for="exampleInputEmail1"
         >
-          Email Address:
+          Email address:
         </label>
         <input
           name="email"
@@ -47,7 +47,7 @@ exports[`Contact component matches snapshot 1`] = `
         />
       </div>
       <button
-        data-testid="submit-button"
+        data-testid="button"
         type="submit"
       >
         Submit

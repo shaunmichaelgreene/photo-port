@@ -1,20 +1,14 @@
-import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
   const {
     categories = [],
     setCurrentCategory,
-    currentCategory,
     contactSelected,
-    setContactSelected
+    currentCategory,
+    setContactSelected,
   } = props;
-
-
-  const handleClick = (item) => {
-    console.log(item);
-    return item;
-  };
 
   return (
     <header className="flex-row px-1">
@@ -36,7 +30,7 @@ function Nav(props) {
           {categories.map((category) => (
             <li
               className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && `navActive`
+                currentCategory.name === category.name && !contactSelected && 'navActive'
                 }`}
               key={category.name}
             >
